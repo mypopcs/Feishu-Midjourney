@@ -1,0 +1,9 @@
+#  飞书
+APP_ID:  
+APP_SECRET:  
+APP_ENCRYPT_KEY:  
+APP_VERIFICATION_TOKEN:  
+# 请确保和飞书应用管理平台中的设置一致 
+BOT_NAME: MidJourney
+# discord 配置
+DISCORD_MIDJOURNEY_URL: http://127.0.0.1:16007/v1/trigger/midjourney-bot
