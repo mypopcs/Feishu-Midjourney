@@ -118,7 +118,7 @@ func (p PersonalMessageHandler) handle(ctx context.Context, event *larkim.P2Mess
 	}
 
 	if instruct, foundInstruct := utils.EitherCutPrefix(qParsed,
-		"/imagine"); foundInstruct {
+		"/mj"); foundInstruct {
 		SendDiscordMessageBot(*msgId, instruct, ctx, *chatId)
 		return nil
 	}

@@ -59,7 +59,7 @@ func discordCardModel(imgKey string, discordMsgId string, redisKey string, msgHa
 		Header: IDiscordCardModelHeader{
 			Title: IText{
 				Tag:     "plain_text",
-				Content: "Midjourney Bot🎉",
+				Content: "Midjourney 生成结果：",
 			},
 		},
 		Elements: []IDiscordCardModelElement{
@@ -208,7 +208,7 @@ func discordCardModel(imgKey string, discordMsgId string, redisKey string, msgHa
 						Tag: "button",
 						Text: IButton{
 							Tag:     "plain_text",
-							Content: "re-roll",
+							Content: "重新生成",
 						},
 						Type: "primary",
 						Value: IExtra{

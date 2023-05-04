@@ -53,7 +53,7 @@ func (p GroupMessageHandler) handle(ctx context.Context, event *larkim.P2Message
 	qParsed := strings.Trim(parseContent(*content), " ")
 
 	if _, foundInstruct := utils.EitherCutPrefix(qParsed,
-		"/imagine"); foundInstruct {
+		"/mj"); foundInstruct {
 		chore.ReplyMsg(ctx, "群聊暂不支持，请私聊进行", msgId)
 		return nil
 	}
